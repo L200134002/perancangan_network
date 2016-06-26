@@ -1,0 +1,16 @@
+Switch>en
+Switch>enable 
+Switch#conf
+Switch#configure 
+Configuring from terminal, memory, or network [terminal]? ter
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#vlan 9
+Switch(config-vlan)#name VLAN9
+Switch(config-vlan)#int
+Switch(config-vlan)#int fa0/1
+Switch(config-if)#swi
+Switch(config-if)#switchport acc
+Switch(config-if)#switchport access vlan
+Switch(config-if)#switchport access vlan 9
+Switch(config-if)#exit
+Switch(config)#
