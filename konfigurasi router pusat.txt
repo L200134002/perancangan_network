@@ -1,0 +1,83 @@
+Router>ena
+Router>enable 
+Router#conf
+Router#configure ter
+Router#configure terminal 
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#int
+Router(config)#interface fa
+Router(config)#interface fastEthernet 0/0
+Router(config-if)#no ip
+Router(config-if)#no ip ad
+Router(config-if)#no ip address 
+Router(config-if)#no shut
+Router(config-if)#no shutdown 
+
+Router(config-if)#
+%LINK-5-CHANGED: Interface FastEthernet0/0, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+
+Router(config-if)#exit
+Router(config)#int
+Router(config)#interface fa0/0.6
+Router(config-subif)#
+%LINK-5-CHANGED: Interface FastEthernet0/0.6, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0.6, changed state to up
+
+Router(config-subif)#enc
+Router(config-subif)#encapsulation do
+Router(config-subif)#encapsulation dot1Q 6
+Router(config-subif)#ip add
+Router(config-subif)#ip address 192.168.6.1 255.255.255.0
+Router(config-subif)#exit
+Router(config)#int fa0/0.5
+Router(config-subif)#
+%LINK-5-CHANGED: Interface FastEthernet0/0.5, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0.5, changed state to up
+
+Router(config-subif)#enc
+Router(config-subif)#encapsulation do
+Router(config-subif)#encapsulation dot1Q 5
+Router(config-subif)#ip add
+Router(config-subif)#ip address 192.168.5.1 255.255.255.0
+Router(config-subif)#exit
+Router(config)#int fa0/0.9
+Router(config-subif)#
+%LINK-5-CHANGED: Interface FastEthernet0/0.9, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0.9, changed state to up
+
+Router(config-subif)#enc
+Router(config-subif)#encapsulation do
+Router(config-subif)#encapsulation dot1Q 9
+Router(config-subif)#ip add
+Router(config-subif)#ip address 192.168.9.1 255.255.255.0
+Router(config-subif)#exit
+Router(config)#int fa0/0.10
+Router(config-subif)#
+%LINK-5-CHANGED: Interface FastEthernet0/0.10, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0.10, changed state to up
+
+Router(config-subif)#enc
+Router(config-subif)#encapsulation do
+Router(config-subif)#encapsulation dot1Q 10
+Router(config-subif)#ip add
+Router(config-subif)#ip address 192.168.10.1 255.255.255.0
+Router(config-subif)#exit
+Router(config)#int fa0/0.8
+Router(config-subif)#
+%LINK-5-CHANGED: Interface FastEthernet0/0.8, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0.8, changed state to up
+
+Router(config-subif)#enca
+Router(config-subif)#encapsulation do
+Router(config-subif)#encapsulation dot1Q 8
+Router(config-subif)#ip add
+Router(config-subif)#ip address 192.168.8.1 255.255.255.0
+Router(config-subif)#exit
+Router(config)#
