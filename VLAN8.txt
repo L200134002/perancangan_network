@@ -1,0 +1,7 @@
+Switch(config)#vlan 8
+Switch(config-vlan)#name VLAN8
+Switch(config-vlan)#int range fa0/3-4
+Switch(config-if-range)#swi
+Switch(config-if-range)#switchport acc
+Switch(config-if-range)#switchport access vlan 8
+Switch(config-if-range)#exit
