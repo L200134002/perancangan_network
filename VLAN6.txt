@@ -1,0 +1,15 @@
+Switch>enable
+Switch>enable 
+Switch#conf
+Switch#configure ter
+Switch#configure terminal 
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#vlan 6
+Switch(config-vlan)#name VLAN6
+Switch(config-vlan)#int
+Switch(config-vlan)#int fa0/2
+Switch(config-if)#swi
+Switch(config-if)#switchport acc
+Switch(config-if)#switchport access vla
+Switch(config-if)#switchport access vlan 6
+Switch(config-if)#exit
