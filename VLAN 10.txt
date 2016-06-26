@@ -1,0 +1,9 @@
+Switch(config)#vlan 10
+Switch(config-vlan)#name VLAN10
+Switch(config-vlan)#int fa0/2
+Switch(config-if)#swi
+Switch(config-if)#switchport acc
+Switch(config-if)#switchport access vla
+Switch(config-if)#switchport access vlan 10
+Switch(config-if)#
+Switch(config-if)#exit
